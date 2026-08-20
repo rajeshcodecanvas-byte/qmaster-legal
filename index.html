@@ -3,102 +3,617 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Q-Master</title>
+
+    <title>Privacy Policy - Q-Master: World Quiz & Trivia</title>
+
+    <meta
+        name="description"
+        content="Privacy Policy for Q-Master: World Quiz & Trivia by The CodeCanvas Studio."
+    >
+
     <style>
-        body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            padding: 20px; 
-            max-width: 850px; 
-            margin: auto; 
-            color: #333;
-            background-color: #0F172A; /* Deep Midnight background matching Q-Master */
+        :root {
+            --navy: #0F172A;
+            --navy-light: #1E293B;
+            --gold: #FFD700;
+            --gold-soft: #F5C542;
+            --blue: #2563EB;
+            --text: #334155;
+            --muted: #64748B;
+            --border: #E2E8F0;
+            --white: #FFFFFF;
+            --background: #0F172A;
         }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 24px;
+            font-family:
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background:
+                radial-gradient(
+                    circle at top right,
+                    rgba(255, 215, 0, 0.08),
+                    transparent 30%
+                ),
+                var(--background);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .card {
-            background: #ffffff;
-            padding: 40px;
+            background: var(--white);
             border-radius: 24px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-            margin-top: 20px;
+            padding: 48px;
+            box-shadow:
+                0 20px 60px rgba(0, 0, 0, 0.35),
+                0 0 0 1px rgba(255, 255, 255, 0.04);
         }
-        h1 { 
-            color: #0F172A; 
-            border-bottom: 5px solid #FFD700; /* Crown Gold accent */
-            padding-bottom: 12px;
-            font-size: 32px;
-            margin-bottom: 20px;
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 18px;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(255, 215, 0, 0.12);
+            color: #8A6500;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.3px;
         }
-        h3 { color: #1e3a8a; margin-top: 35px; font-size: 22px; font-weight: 700; }
-        p, li { font-size: 16px; color: #334155; }
-        
-        .link { 
-            color: #2563eb; 
-            font-weight: bold; 
-            text-decoration: none; 
-            border-bottom: 2px solid #FFD700;
-            transition: all 0.2s ease;
+
+        .brand::before {
+            content: "◆";
+            color: var(--gold-soft);
+            font-size: 12px;
         }
-        .link:hover {
-            color: #ffffff;
-            background-color: #1e3a8a;
-            padding: 2px 6px;
-            border-radius: 4px;
+
+        h1 {
+            margin: 0;
+            padding-bottom: 16px;
+            color: var(--navy);
+            font-size: clamp(30px, 5vw, 42px);
+            line-height: 1.15;
+            border-bottom: 5px solid var(--gold);
         }
+
+        .updated {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        h2 {
+            margin-top: 42px;
+            margin-bottom: 14px;
+            color: #1E3A8A;
+            font-size: 23px;
+            line-height: 1.3;
+        }
+
+        h3 {
+            margin-top: 26px;
+            margin-bottom: 8px;
+            color: var(--navy);
+            font-size: 18px;
+        }
+
+        p,
+        li {
+            font-size: 16px;
+        }
+
+        p {
+            margin: 12px 0;
+        }
+
+        ul {
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        strong {
+            color: var(--navy);
+        }
+
+        .highlight {
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .notice {
+            margin: 26px 0;
+            padding: 18px 20px;
+            border-left: 4px solid var(--gold);
+            border-radius: 12px;
+            background: #FFFBEA;
+        }
+
+        .notice p {
+            margin: 0;
+        }
+
+        .service {
+            margin: 14px 0;
+            padding: 16px 18px;
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            background: #F8FAFC;
+        }
+
+        .service strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        a {
+            color: var(--blue);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(37, 99, 235, 0.35);
+        }
+
+        a:hover {
+            color: #1D4ED8;
+            border-bottom-color: #1D4ED8;
+        }
+
+        .summary {
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        table {
+            width: 100%;
+            min-width: 600px;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+
+        th,
+        td {
+            padding: 13px 14px;
+            text-align: left;
+            vertical-align: top;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            color: var(--navy);
+            background: #F8FAFC;
+            font-weight: 700;
+        }
+
         .footer {
-            margin-top: 60px; 
-            font-size: 0.9em; 
-            color: #64748b;
+            margin-top: 55px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
             text-align: center;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 25px;
+            color: var(--muted);
+            font-size: 14px;
         }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 12px; }
-        .highlight { font-weight: 600; color: #0F172A; }
+
+        .footer strong {
+            color: var(--navy);
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 12px;
+            }
+
+            .card {
+                padding: 28px 20px;
+                border-radius: 18px;
+            }
+
+            h2 {
+                font-size: 21px;
+            }
+
+            p,
+            li {
+                font-size: 15px;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="card">
+
+<div class="container">
+    <main class="card">
+
+        <div class="brand">
+            The CodeCanvas Studio
+        </div>
+
         <h1>Privacy Policy</h1>
-        <p><strong>Last updated:</strong> June 23, 2026</p>
-        
-        <p>This privacy policy applies to the <span class="highlight">Q-Master</span> mobile application (hereinafter referred to as "the App"). The App is provided by <span class="highlight">The CodeCanvas Studio</span> as a Free service and is intended for use "AS IS".</p>
-        
-        <p>The App's branding identity and motto is <strong>"Q-Master: Claim Your Intellectual Throne"</strong>.</p>
 
-        <h3>1. Data Usage and Collection</h3>
-        <p>We prioritize user privacy. The App does <span class="highlight">NOT</span> directly collect or store personal identifiable information such as your name, email address, or phone number. All game progress and high scores are stored <span class="highlight">locally</span> on your device.</p>
-        <p>The App utilizes trusted third-party core integrations to manage device capabilities, handle asset loading, and ensure operational stability. These background utilities do not collect personal identifiers or track personal profiles through our application code logic.</p>
+        <p class="updated">
+            <strong>Last updated:</strong> August 21, 2026
+        </p>
 
-        <h3>2. Third-Party Services</h3>
-        <p>The App uses essential service providers to maintain platform compatibility and secure operational features. We recommend checking the privacy details of these foundational services:</p>
+        <p>
+            This Privacy Policy explains how
+            <span class="highlight">The CodeCanvas Studio</span>
+            handles information in the
+            <span class="highlight">Q-Master: World Quiz &amp; Trivia</span>
+            mobile application ("Q-Master", "the App", "we", "us", or "our").
+        </p>
+
+        <p>
+            Q-Master is designed as a privacy-focused trivia and learning
+            application. The App does not require users to create an account
+            and does not intentionally collect personal identifiers such as
+            names, email addresses, phone numbers, or physical addresses
+            through the application's own code.
+        </p>
+
+        <div class="notice">
+            <p>
+                <strong>Privacy at a glance:</strong>
+                Q-Master stores gameplay progress locally on your device.
+                The App does not contain an advertising or analytics SDK in
+                the application dependencies reviewed for this release.
+                Internet access is primarily used for loading national flag
+                images and supporting Google Play functionality.
+            </p>
+        </div>
+
+        <h2>1. Information Stored by Q-Master</h2>
+
+        <p>
+            Q-Master stores gameplay and learning information locally using
+            an on-device Room database. This information is used to provide
+            the App's quiz, learning, achievement, and weekly challenge
+            features.
+        </p>
+
+        <p>Depending on how you use the App, locally stored information may include:</p>
+
         <ul>
-            <li><a href="https://www.google.com/policies/privacy/" target="_blank" class="link">Google Play Services</a></li>
+            <li>Quiz questions and educational content included with the App.</li>
+            <li>Quiz scores and high scores.</li>
+            <li>Quiz category information.</li>
+            <li>Learning progress and learned status.</li>
+            <li>Question activity timestamps used for gameplay logic.</li>
+            <li>Badge and achievement progress.</li>
+            <li>Weekly challenge scores and completion status.</li>
+            <li>Weekly challenge identifiers and related timestamps.</li>
         </ul>
 
-        <h3>3. External Resources (Flag Assets) & Encryption</h3>
-        <p>The App dynamically fetches national flag images from <span class="highlight">FlagCDN</span> to provide an educational experience. While the App is optimized for offline play, an internet connection is used to load these visual assets. All data transmitted between the App and core services uses secure, encrypted protocols (HTTPS) to ensure data is encrypted in transit. These standard HTTPS requests do not transmit personal user identifiers.</p>
+        <p>
+            This gameplay information is not associated with a user account
+            because Q-Master does not require an account or login.
+        </p>
 
-        <h3>4. Age Policy (Children’s Privacy)</h3>
-        <p>Q-Master is intended for a general audience aged <strong>13 and above</strong>. We do not knowingly collect personally identifiable information from children under 13. Since gameplay data is stored locally, it remains under the control of the device owner.</p>
+        <h2>2. Personal Information</h2>
 
-        <h3>5. Data Retention & Deletion</h3>
-        <p>All user progress is stored locally in a Room database. This data is deleted when the App is uninstalled or when you use the "Reset Realm Progress" feature within the Settings menu.</p>
+        <p>
+            Q-Master's application code does not intentionally collect or
+            store personal identifiers such as:
+        </p>
 
-        <h3>6. Security</h3>
-        <p>Your local data is as secure as your physical device. We recommend using biometric or PIN security on your smartphone to protect your locally stored progress and information.</p>
+        <ul>
+            <li>Name</li>
+            <li>Email address</li>
+            <li>Telephone number</li>
+            <li>Postal address</li>
+            <li>Precise location</li>
+            <li>Contacts</li>
+            <li>Microphone recordings</li>
+            <li>Camera images or recordings</li>
+            <li>Health or fitness information</li>
+        </ul>
 
-        <h3>7. Changes to This Privacy Policy</h3>
-        <p>We may update our Privacy Policy from time to time to reflect changes in our practices or for legal reasons. Any updates will be posted on this page with an updated "Last updated" date.</p>
+        <p>
+            Q-Master does not provide a user-account system or profile
+            registration through the App.
+        </p>
 
-        <h3>8. Contact Us</h3>
-        <p>If you have any questions or suggestions about our Privacy Policy, please contact us at:</p>
-        <p>Email: <a href="mailto:rajesh.codecanvas@gmail.com" class="link">rajesh.codecanvas@gmail.com</a></p>
-        
+        <h2>3. Internet and Network Access</h2>
+
+        <p>
+            Q-Master requires Internet access for certain features, primarily
+            to retrieve national flag images and to support Google Play's
+            optional in-app review functionality.
+        </p>
+
+        <p>
+            The App does not intentionally attach personal profile information
+            to its flag-image requests. However, when your device connects to
+            an external Internet service, normal technical network information
+            such as an IP address may be visible to that service as part of
+            standard Internet communication.
+        </p>
+
+        <h2>4. National Flag Image Services</h2>
+
+        <p>
+            Q-Master dynamically loads national flag images from external
+            image services. These services are used solely to provide visual
+            country and flag content within the App.
+        </p>
+
+        <div class="service">
+            <strong>Primary service: FlagCDN</strong>
+            <span>
+                Q-Master requests flag images using country/territory codes.
+                The App uses HTTPS for these image requests.
+            </span>
+        </div>
+
+        <div class="service">
+            <strong>Fallback service: FlagsAPI</strong>
+            <span>
+                If the primary flag image request fails, Q-Master may request
+                the corresponding flag image from FlagsAPI as a fallback.
+            </span>
+        </div>
+
+        <p>
+            The country code used to construct these requests is part of the
+            requested image address. The App does not intentionally send
+            your name, email address, phone number, quiz score, or gameplay
+            profile as part of these flag-image requests.
+        </p>
+
+        <p>
+            Flag images may also be cached locally by the App's image-loading
+            system to improve performance and reduce repeated network
+            requests.
+        </p>
+
+        <h2>5. Google Play Services</h2>
+
+        <p>
+            Q-Master uses Google's Google Play In-App Review API. This allows
+            users to optionally submit an application review through the
+            Google Play review interface.
+        </p>
+
+        <p>
+            The review functionality is provided through Google Play's
+            platform services. Google may process information according to
+            its own policies when Google Play functionality is used.
+        </p>
+
+        <p>
+            For more information about Google's privacy practices, please
+            review
+            <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">
+                Google's Privacy Policy
+            </a>.
+        </p>
+
+        <h2>6. Advertising and Analytics</h2>
+
+        <p>
+            Q-Master does not contain an advertising SDK or analytics SDK in
+            the application dependencies reviewed for this release.
+        </p>
+
+        <p>
+            Q-Master therefore does not intentionally use advertising
+            identifiers or analytics profiles to track users across the App.
+        </p>
+
+        <h2>7. Data Backup and Device Transfer</h2>
+
+        <p>
+            Android backup and device-transfer functionality is enabled for
+            Q-Master. Depending on the Android device, operating-system
+            settings, and backup configuration, locally stored application
+            data may be included in Google's supported backup or device
+            transfer mechanisms.
+        </p>
+
+        <p>
+            Backup and restoration are controlled by the Android operating
+            system and applicable platform services. Restored application
+            data may therefore reappear when Q-Master is restored to a
+            supported device.
+        </p>
+
+        <p>
+            Q-Master itself does not operate a separate cloud database or
+            user account system for storing gameplay progress.
+        </p>
+
+        <h2>8. File Sharing and Temporary Files</h2>
+
+        <p>
+            Q-Master uses Android's FileProvider mechanism for secure sharing
+            of supported application files through temporary content URIs.
+            The configured provider path is limited to the application's
+            cache-based shared image directory.
+        </p>
+
+        <p>
+            FileProvider does not by itself upload files to Q-Master's
+            servers. Any file sharing is controlled by Android and by the
+            application feature that initiates the share operation.
+        </p>
+
+        <h2>9. Data Retention and Deletion</h2>
+
+        <p>
+            Q-Master gameplay information is stored locally in the App's
+            Room database. The App provides a
+            <strong>"Reset Realm Progress"</strong>
+            feature for resetting supported gameplay progress from within
+            the App's Settings.
+        </p>
+
+        <p>
+            When the App's local data is cleared or the application is
+            uninstalled, the locally stored application data is removed from
+            the active application installation, subject to Android's
+            backup, restoration, and device-transfer mechanisms described
+            above.
+        </p>
+
+        <p>
+            Q-Master does not maintain a separate personal account database
+            from which users need to request deletion of an online profile.
+        </p>
+
+        <h2>10. Data Security</h2>
+
+        <p>
+            Q-Master uses Android's application-private storage mechanisms for
+            its local Room database. Network image requests use HTTPS
+            endpoints where supported by the external service.
+        </p>
+
+        <p>
+            No security system can guarantee absolute protection against
+            every possible threat. Users should keep their Android operating
+            system and device security features up to date and use appropriate
+            device security such as a PIN, password, or biometric protection.
+        </p>
+
+        <h2>11. Children's Privacy</h2>
+
+        <p>
+            Q-Master is intended for a general audience aged
+            <strong>13 and above</strong>.
+        </p>
+
+        <p>
+            We do not knowingly collect personally identifiable information
+            from children under 13 through Q-Master's application code.
+            Because Q-Master does not require an account and gameplay
+            information is primarily stored locally, the App is designed to
+            minimize the collection of personal information.
+        </p>
+
+        <p>
+            If you believe that a child has provided personal information
+            through the App in a manner inconsistent with this Privacy Policy,
+            please contact us so that we can review the situation.
+        </p>
+
+        <h2>12. Third-Party Services</h2>
+
+        <p>
+            Q-Master may interact with the following external services for
+            specific application functionality:
+        </p>
+
+        <ul>
+            <li>
+                Google Play / Google Play In-App Review API — for optional
+                application review functionality.
+            </li>
+            <li>
+                FlagCDN — for national flag image delivery.
+            </li>
+            <li>
+                FlagsAPI — as a fallback source for national flag images.
+            </li>
+        </ul>
+
+        <p>
+            These third-party services operate independently from
+            The CodeCanvas Studio. Their own privacy policies and terms may
+            apply when your device communicates with their infrastructure.
+        </p>
+
+        <h2>13. Offline Functionality</h2>
+
+        <p>
+            Q-Master is designed to provide its core quiz and learning
+            experience using content stored locally on the device.
+        </p>
+
+        <p>
+            Some national flag images may be retrieved from external services
+            when an Internet connection is available. Q-Master also provides
+            locally bundled flag resources as fallbacks for supported content.
+        </p>
+
+        <p>
+            As a result, an Internet connection is not required for every
+            aspect of the App's core gameplay, although certain visual and
+            platform-supported features may benefit from or require network
+            connectivity.
+        </p>
+
+        <h2>14. No Sale of Personal Information</h2>
+
+        <p>
+            The CodeCanvas Studio does not sell personal information collected
+            through Q-Master.
+        </p>
+
+        <p>
+            Q-Master does not operate a user-profile advertising system or
+            sell user gameplay profiles to advertisers.
+        </p>
+
+        <h2>15. Changes to This Privacy Policy</h2>
+
+        <p>
+            We may update this Privacy Policy from time to time to reflect
+            changes to Q-Master, third-party services, applicable requirements,
+            or our privacy practices.
+        </p>
+
+        <p>
+            When we make changes, we will update the
+            <strong>"Last updated"</strong>
+            date at the top of this page. Continued use of Q-Master after an
+            updated Privacy Policy is published means that the updated policy
+            applies to the App.
+        </p>
+
+        <h2>16. Contact Us</h2>
+
+        <p>
+            If you have questions, concerns, or suggestions regarding this
+            Privacy Policy or Q-Master's privacy practices, please contact:
+        </p>
+
+        <p>
+            <strong>The CodeCanvas Studio</strong><br>
+            Email:
+            <a href="mailto:rajesh.codecanvas@gmail.com">
+                rajesh.codecanvas@gmail.com
+            </a>
+        </p>
+
         <div class="footer">
             © 2026 <strong>The CodeCanvas Studio</strong>. All rights reserved.<br>
-            <em>Q-Master: Brain Trivia Quiz</em>
+            <em>Q-Master: World Quiz &amp; Trivia</em>
         </div>
-    </div>
+
+    </main>
+</div>
+
 </body>
 </html>
